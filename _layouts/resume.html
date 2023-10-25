@@ -48,58 +48,54 @@
 
       </header>
 
-
+      <!-- 
       <section class="content-section">
-
         <header class="section-header">
           <h2>Skills</h2>
         </header>
-        
-          <style>
-          /* Create three equal columns that floats next to each other */
-          .skill-column {
-            float: left;
-            width: 33.33%;
-            padding: 0px;
-            height: 150px; /* Should be removed. Only for demonstration */
-          }
-    
-          /* Clear floats after the columns */
-          .skill-row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-          </style>
-    
-          <div class="skill-row">
-            <div class="skill-column">
-              <ul>
-                <li>Project Planning</li>
-                <li>Project Execution</li>
-                <li>Risk Management</li>
-                <li>Dependency Management</li>
-                <li>Project Reporting</li>
-              </ul>  
-            </div>
-            <div class="skill-column">
-              <ul>
-                <li>Strong Communication Skills</li>
-                <li>Managing Stakeholder Relationships</li>
-                <li>Facilitating Team Collaboration</li>
-              </ul>  
-            </div>
-            <div class="skill-column">
-              <ul>
-                <li>Autodesk Shotgrid</li>
-                <li>Jira & Similar Agile Tools </li>
-                <li>Microsoft Office</li>
-              </ul>  
-            </div>
+        <style>
+        /* Create three equal columns that floats next to each other */
+        .skill-column {
+          float: left;
+          width: 33.33%;
+          padding: 0px;
+          height: 150px; /* Should be removed. Only for demonstration */
+        }
+  
+        /* Clear floats after the columns */
+        .skill-row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+        <div class="skill-row">
+          <div class="skill-column">
+            <ul>
+              <li>Project Planning</li>
+              <li>Project Execution</li>
+              <li>Risk Management</li>
+              <li>Dependency Management</li>
+              <li>Project Reporting</li>
+            </ul>  
           </div>
-
+          <div class="skill-column">
+            <ul>
+              <li>Strong Communication Skills</li>
+              <li>Managing Stakeholder Relationships</li>
+              <li>Facilitating Team Collaboration</li>
+            </ul>  
+          </div>
+          <div class="skill-column">
+            <ul>
+              <li>Autodesk Shotgrid</li>
+              <li>Jira & Similar Agile Tools </li>
+              <li>Microsoft Office</li>
+            </ul>  
+          </div>
+        </div>
       </section>
-
+      -->
       
 
 
@@ -134,8 +130,8 @@
         {% for job in site.data.experience %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description" style="margin-top: -2px; margin-bottom: -2px;">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <h4 class="resume-item-details" itemprop="description" style="margin-top: -2px; margin-bottom: -2px;">{{ job.location }}</h4>
+          <h4 class="resume-item-details" itemprop="description" style="margin-top: -2px;">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <h4 class="resume-item-details" itemprop="description" style="margin-top: -2px;">{{ job.location }}</h4>
           <p class="resume-item-copy">{{ job.summary }}</p>
         </div>
         {% endfor %}
