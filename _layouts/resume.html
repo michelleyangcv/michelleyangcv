@@ -110,7 +110,7 @@
         </header>
         {% for skill in site.data.skills %}
         <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
+          <h4 class="resume-item-copy">{{ skill.skill }}</h4>
           <p class="resume-item-copy">{{ skill.description }}</p>
         </div>
         {% endfor %}
@@ -131,7 +131,7 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
           <h4 class="resume-item-details" itemprop="description" style="margin-top: -2px;">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <h4 class="resume-item-details" itemprop="description" style="margin-top: -2px;">{{ job.location }}</h4>
+          <!-- <h4 class="resume-item-details" itemprop="description" style="margin-top: -2px;">{{ job.location }}</h4> -->
           <p class="resume-item-copy">{{ job.summary }}</p>
         </div>
         {% endfor %}
