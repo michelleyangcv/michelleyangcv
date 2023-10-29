@@ -52,11 +52,12 @@
     padding: .4rem 0;
     @include clearfix;
 
+    // production manager
     .header-title {
       @include sans;
+      font-size: 2.5rem;
       font-weight: 300;
-      font-size: 1.75rem;
-      line-height: 2rem;
+      line-height: 3.5rem;
       letter-spacing: -.05rem;
       text-align: center;
       margin: 0 0 .5rem;
